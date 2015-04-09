@@ -4,11 +4,11 @@
     </head>
     <body>
         <% if ("undefined" !== typeof login) { %>
-        you are logined as <%= user %>. 
-        <a href="/logout">logout</a>
+            you are logined as <%= user %>. <br/>
+            <a href="/logout">logout</a>
         <% } else { %> 
-        you are not logined
-        <a href="/login">login</a>
+            you are not logined. <br/>
+            <a href="/login">login</a>
         <% } %>
         <br/>
         sessionID : <%= id %>
