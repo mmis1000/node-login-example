@@ -6,8 +6,6 @@
 var http = require('http');
 var path = require('path');
 
-var async = require('async');
-//var socketio = require('socket.io');
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
@@ -19,12 +17,8 @@ var session = require('express-session');
 //
 var router = express();
 var server = http.createServer(router);
-//var io = socketio.listen(server);
 var bodyParser = require("body-parser");
 router.use(express.static(path.resolve(__dirname, 'client')));
-var messages = [];
-var sockets = [];
-
 
 router.set('view engine', 'ejs');
 router.set('views', 'views');
