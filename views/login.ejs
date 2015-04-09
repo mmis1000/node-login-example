@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <% if ( lastError ) {%>
+        <span style="color:#ff0000" ><%= lastError %></span>
+        <% } %>
+        <div>12345/12345</div>
+        <form method="post">
+         account: <p><input type="text" name="account" value=""/></p>
+         password: <p><input type="password" name="password" value=""/></p>
+         <p><input type="submit" value="Submit"/></p>
+        </form>
+    </body>
+</html>
